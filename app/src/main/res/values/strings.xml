@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Movies</string>
+    <string name="search_info">Search Movie or TV Series by name</string>
+    <string name="base_url">https://api.themoviedb.org/3/</string>
+    <string name="retry_info">"Oops! Failed to get results.\n Tap to retry"</string>
+    <string name="empty_list_info">"No results found."</string>
+    <string name="drag_drop_container_info">"Click on any Movie to select\n OR\n Long Click to Drag and Drop"</string>
+</resources>

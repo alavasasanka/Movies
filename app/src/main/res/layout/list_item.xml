@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    android:id="@+id/list_item_parent"
+    android:clickable="true"
+    android:layout_width="150dp"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        app:cardCornerRadius="5dp"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/card_view">
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/inner_constraint_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:scaleType="fitCenter"
+                    android:id="@+id/image"
+                    android:layout_margin="5dp"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"/>
+
+                <TextView
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:paddingLeft="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="Movie"
+                    android:id="@+id/media_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="1982"
+                    android:id="@+id/year"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintBottom_toTopOf="@+id/media_type"
+                    app:layout_constraintTop_toBottomOf="@+id/image"
+                    android:text="The King Of Comedy"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:gravity="top"
+                    android:id="@+id/title"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:textStyle="bold"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"/>
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.v7.widget.CardView>
+
+</android.support.constraint.ConstraintLayout>
